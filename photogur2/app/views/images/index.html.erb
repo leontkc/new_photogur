@@ -1,1 +1,5 @@
-<hi>hi</hi>
+<hi>Images</hi>
+<% @images.each do |image| %>
+<p><%= image.piece %>, <%= image.creator %></p>
+  <%= link_to image_tag(image.location, size:"300x300"), "/images/#{image.id}" %>
+<% end %>

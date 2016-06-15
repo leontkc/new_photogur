@@ -1,0 +1,23 @@
+<h1>Edit Image</h1>
+
+<p>
+  <%= link_to "Back", @picture %>
+</p>
+
+<%= form_for @image do |f| %>
+  <p>
+    <%= f.label :creator %><br>
+    <%= f.text_field :creator %>
+  </p>
+  <p>
+    <%= f.label :piece %><br>
+    <%= f.text_field :piece %>
+  </p>
+  <p>
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
